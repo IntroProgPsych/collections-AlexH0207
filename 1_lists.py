@@ -12,4 +12,10 @@
 # Call the function with colors.
 # 
 # Write your code here:
+
 colors = ["red", "green", "blue", "yellow", "purple"]
+def color_info(items):
+    print(items[0])
+    print(items[-1])
+    print(f"{items[1]}\n{items[2]}")
+color_info(colors)

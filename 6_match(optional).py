@@ -10,3 +10,11 @@
 #
 # 
 # Write your code here:
+def handle_command(cmd):
+    match cmd.lower():
+        case "start":print ("Starting...")
+        case "stop": print ("Stopping...")
+        case "save": print ("Saving...")
+        case _: print ("Unkown command")
+command = input("coamnd: ")
+handle_command(command)

@@ -20,3 +20,8 @@ capitals = {
     "Germany": "Berlin",
     "Spain": "Madrid"
 }
+def get_capital(country, capitals_dict):
+    if not capitals_dict.get(country): return "Unkown"
+    return capitals_dict[country]
+country=input("country:")
+print(get_capital(country, capitals))
